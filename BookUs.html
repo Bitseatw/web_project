@@ -1,221 +1,104 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Book Us - Bloom & Bake</title>
 </head>
-
 <body>
-
-    <h1>Book Us</h1>
-
+    <header>
+        <h1>Book Bloom & Bake</h1>
+        <p>Make your special moments sweeter and more beautiful!</p>
+    </header>
     <hr>
-
-    <a href="index.html">Home</a> |
-    <a href="AboutUs.html">About Us</a> |
-    <a href="ContactUs.html">Contact Us</a> |
-    <a href="BookUs.html">Book Us</a>
-
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="aboutUs.html">About Us</a> |
+        <a href="contactUs.html">Contact Us</a> |
+        <a href="bookUs.html">Book Us</a>
+    </nav>
     <hr>
+    <main>
+        <h2>Special Offers</h2>
+        <p>Make your celebrations memorable with our cakes, flowers and special packages.</p>
+        <ul>
+            <li>Birthday cake orders</li>
+            <li>Cake and flower packages</li>
+            <li>Wedding and anniversary cakes</li>
+            <li>Special event decorations</li>
+            <li>Custom gift packages</li>
+        </ul>
+        <hr>
+        <h2>Place Your Order</h2>
+        <p>Fill in the form below to tell us what you would like to order.</p>
+        <form>
+            <label for="customerName">Full Name:</label><br>
+            <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+            <br><br>
+            <label for="customerEmail">Email Address:</label><br>
+            <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required>
+            <br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+251">
+            <br><br>
+            <label for="product">Choose a Product:</label><br>
+            <select id="product" name="product">
+                <option value="birthday cake">Birthday Cake</option>
+                <option value="cake and flowers">Cake and Flowers</option>
+                <option value="flower bouquet">Flower Bouquet</option>
+                <option value="brownies">Brownies</option>
+                <option value="mini cakes">Mini Cakes</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1">
+            <br><br>
+            <label for="orderDate">Preferred Date:</label><br>
+            <input type="date" id="orderDate" name="orderDate">
+            <br><br>
+            <label for="orderDetails">Additional Details:</label><br>
+            <textarea id="orderDetails" name="orderDetails" rows="5" cols="30" placeholder="Tell us more about your order"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Order">
+            <input type="reset" value="Clear Form">
+        </form>
+        <hr>
+        <h2>Book Us for Your Event</h2>
+        <p>Planning a birthday, wedding, anniversary or another special event? Tell us about it!</p>
+        <form>
+            <label for="eventName">Full Name:</label><br>
+            <input type="text" id="eventName" name="eventName" placeholder="Enter your name" required>
+            <br><br>
+            <label for="eventEmail">Email Address:</label><br>
+            <input type="email" id="eventEmail" name="eventEmail" placeholder="Enter your email" required>
+            <br><br>
+            <label for="eventType">Type of Event:</label><br>
+            <select id="eventType" name="eventType">
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="engagement">Engagement</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+            <label for="eventDate">Event Date:</label><br>
+            <input type="date" id="eventDate" name="eventDate">
+            <br><br>
+            <label for="eventDetails">Event Details:</label><br>
+            <textarea id="eventDetails" name="eventDetails" rows="5" cols="30" placeholder="Describe your event and what you need"></textarea>
+            <br><br>
+            <input type="submit" value="Book Your Event">
 
-    <h2>Welcome to Bloom & Bake!</h2>
-
-    <p>
-        Whether you are ordering something sweet or planning
-        a special celebration, we are here to make your
-        moments beautiful and unforgettable!
-    </p>
-
+        </form>
+        <hr>
+        <h2>Need Help?</h2>
+        <p>Contact us at <a href="mailto:bloomandbakeshop01@gmail.com">bloomandbakeshop01@gmail.com</a><br>
+        Phone: +251 988466174</p>
+    </main>
     <hr>
-
-    <h2>Our Special Offers</h2>
-
-    <p>Explore our services and make your celebration special!</p>
-
-    <h3>Birthday Package</h3>
-    <p>Cakes, flowers and beautiful birthday decorations</p>
-
-    <h3>Bridal Shower Package</h3>
-    <p>Elegant flower arrangements, cakes and bridal decorations</p>
-
-    <h3>Baby Shower Package</h3>
-    <p>Beautiful themed cakes, flowers and baby shower decorations</p>
-
-    <h3>Engagement Package</h3>
-    <p>Romantic flower arrangements, special cakes and decorations.</p>
-
-    <h3>Custom Packages</h3>
-    <p>Tell us your ideas and we will help make them happen!</p>
-
-    <hr>
-
-    <h2>Place a Regular Order</h2>
-
-    <p>
-        Want to order a cake, flowers or a gift package?
-        Fill out the form below.
-    </p>
-
-    <form>
-
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter your name">
-        <br><br>
-
-        <label>Phone Number:</label><br>
-        <input type="tel" placeholder="Enter your phone number">
-        <br><br>
-
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email">
-        <br><br>
-
-        <label>Choose Your Order:</label><br>
-
-        <select>
-            <option>Choose an order</option>
-            <option>Birthday Cake</option>
-            <option>Custom Cake</option>
-            <option>Flower Bouquet</option>
-            <option>Gift Package</option>
-            <option>Cake and Flowers</option>
-            <option>Other</option>
-        </select>
-
-        <br><br>
-
-        <label>Quantity:</label><br>
-        <input type="number" placeholder="Enter quantity">
-        <br><br>
-
-        <label>Delivery Date:</label><br>
-        <input type="date">
-        <br><br>
-
-        <label>Delivery Option:</label><br>
-
-        <input type="radio" name="delivery" value="delivery">
-        Home Delivery
-
-        <br>
-
-        <input type="radio" name="delivery" value="pickup">
-        Pick Up at Our Shop
-
-        <br><br>
-
-        <label>Delivery Address (if needed):</label><br>
-        <textarea rows="3" cols="35"
-        placeholder="Enter your delivery address"></textarea>
-
-        <br><br>
-
-        <label>Additional Details:</label><br>
-        <textarea rows="4" cols="35"
-        placeholder="Describe your order..."></textarea>
-
-        <br><br>
-
-        <input type="submit" value="Place Order">
-        <input type="reset" value="Clear">
-
-    </form>
-
-    <hr>
-
-    <h2>Book Us for Your Special Event</h2>
-
-    <p>
-        Planning a celebration? Let Bloom & Bake take care
-        of the sweet details, flowers and decorations!
-    </p>
-
-    <form>
-
-        <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter your name">
-        <br><br>
-
-        <label>Phone Number:</label><br>
-        <input type="tel" placeholder="Enter your phone number">
-        <br><br>
-
-        <label>Email:</label><br>
-        <input type="email" placeholder="Enter your email">
-        <br><br>
-
-        <label>Choose Your Event:</label><br>
-
-        <select>
-            <option>Select an event</option>
-            <option>Birthday Party</option>
-            <option>Bridal Shower</option>
-            <option>Baby Shower</option>
-            <option>Engagement</option>
-            <option>Other Celebration</option>
-        </select>
-
-        <br><br>
-
-        <label>Event Date:</label><br>
-        <input type="date">
-        <br><br>
-
-        <label>Number of Guests:</label><br>
-        <input type="number" placeholder="Expected guests">
-        <br><br>
-
-        <label>Services Needed:</label><br>
-
-        <input type="checkbox" name="service" value="cake">
-        Cakes
-
-        <br>
-
-        <input type="checkbox" name="service" value="flowers">
-        Flowers
-
-        <br>
-
-        <input type="checkbox" name="service" value="decoration">
-        Event Decorations
-
-        <br>
-
-        <input type="checkbox" name="service" value="rental">
-        Event Space Rental
-
-        <br>
-
-        <input type="checkbox" name="service" value="fullpackage">
-        Complete Event Package
-
-        <br><br>
-
-        <label>Additional Requests:</label><br>
-
-        <textarea rows="5" cols="35"
-        placeholder="Tell us about your event and ideas..."></textarea>
-
-        <br><br>
-
-        <input type="submit" value="Book Your Event">
-        <input type="reset" value="Clear">
-
-    </form>
-
-    <hr>
-
-    <h2>Have Questions?</h2>
-
-    <p>Contact us and let's make something beautiful together!</p>
-
-    <p>Phone: +251 988466174</p>
-    <p>Email: bloomandbakeshop01@gmail.com</p>
-    <p>Location: Addis Ababa, Ethiopia</p>
-
-    <hr>
-
-    <p>Copyright &copy; 2026 Bloom & Bake</p>
-
+    <footer>
+        <p>Copyright &copy; 2026 Bloom & Bake</p>
+    </footer>
 </body>
 </html>
